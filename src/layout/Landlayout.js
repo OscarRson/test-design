@@ -12,8 +12,8 @@ function Landlayout() {
             <div className='email-input mt-5'>
               <input className='text-base text-white' placeholder='Enter Your Email'></input>
               <button className='text-base text-white font-bold'>
-                  <div className='pc-text'>Get Started</div>
-                  <div className="mobile-text space-y-2 hidden">
+                  <div className='email-pc-text'>Get Started</div>
+                  <div className="email-mobile-text space-y-2 hidden">
                   <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
