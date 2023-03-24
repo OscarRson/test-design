@@ -102,7 +102,7 @@
     .back-circle1{
         width: 50% !important;
         right: -30% !important;
-        bottom: -10% !important;
+        bottom: -30% !important;
         filter: blur(150px)!important;
     }
     .land-container{
