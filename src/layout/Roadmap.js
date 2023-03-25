@@ -2,7 +2,7 @@ import '../assest/css/Roadmap.css'
 import ficon1 from '../assest/img/fi1.png'
 function Roadmap() {
   return (
-    <div className="roadmap-container flex flex-col justify-center items-center">
+    <div className="roadmap-container flex flex-col justify-center items-center"  data-aos="fade-up">
       <div className="roadmap-content">
         <div className="roadmap-design-1 -skew-x-12"></div>
         <div className="roadmap-design-2 skew-x-12"></div>

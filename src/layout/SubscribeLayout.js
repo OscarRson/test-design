@@ -2,7 +2,7 @@ import '../assest/css/SubscribeLayout.css'
 import ficon1 from '../assest/img/fi1.png'
 function SubscribeLayout() {
   return (
-    <div className="subscribe-container flex flex-col justify-center items-center">
+    <div className="subscribe-container flex flex-col justify-center items-center"  data-aos="fade-up">
         <div className='subscribe-content flex flex-col  justify-center items-center'>
             <div className="subscribe-design-2 skew-x-12"></div>
             <div className="subscribe-design-1 -skew-x-12"></div>

@@ -3,7 +3,7 @@ import logo from '../assest/img/Logo.png';
 
 function SubscribeLayout() {
   return (
-    <div className="footer-container flex flex-col justify-center items-center">
+    <div className="footer-container flex flex-col justify-center items-center"  data-aos="fade-up">
         <div className='footer-content grid gap-8 border-t-2 border-opacity-30 border-white pt-16 pb-10 md:grid-cols-1 lg:grid-cols-3 '>
           <div className='flex flex-col pr-10'>
             <div className='flex flex-row justify-items-center items-center'>

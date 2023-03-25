@@ -15,7 +15,7 @@ import ficon_c6 from '../assest/img/fi_6.png'
 function KeyFeaturesLayout() {
   const [featureId, setFeatureId] = useState(false);
   return (
-    <div className="feature-container flex flex-col justify-center items-center">
+    <div className="feature-container flex flex-col justify-center items-center"  data-aos="fade-up">
         <div className='feature-title flex flex-col'>
            <div className='text-5xl text-white text-center font-bold'>Key features</div>
            <div className='text-base text-white text-center  opacity-60 mt-5'>Today, several centralized exchanges are operating with no transparency. Although DEX are growing in numbers, there will always be a need for fiat on-ramps. InfinityBit is a CEX that offers the transparency of a DEX.</div>

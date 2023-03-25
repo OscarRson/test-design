@@ -2,7 +2,7 @@ import '../assest/css/Landlayout.css'
 
 function Landlayout() {
   return (
-    <div className="land-container flex justify-center items-center">
+    <div className="land-container flex justify-center items-center" data-aos="fade-up">
         <div className="back-circle"></div>
         <div className='back-circle1'></div>
         <div className='land-content flex flex-col items-center'>

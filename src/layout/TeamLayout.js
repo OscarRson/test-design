@@ -3,7 +3,7 @@ import ficon1 from '../assest/img/fi1.png'
 import in_icon from '../assest/img/In.png'
 function TeamLayout() {
   return (
-    <div className="team-container flex flex-col justify-center items-center">
+    <div className="team-container flex flex-col justify-center items-center"  data-aos="fade-up">
         <div className='feature-title flex flex-col'>
            <div className='text-5xl text-white text-center font-bold'>Our Team Members</div>
         </div>

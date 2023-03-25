@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './App.css';
 import Navbar from "./layout/Navbar"
 import Landlayout from './layout/Landlayout';
@@ -7,11 +9,15 @@ import Roadmap from './layout/Roadmap';
 import TeamLayout from './layout/TeamLayout';
 import SubscribeLayout from './layout/SubscribeLayout';
 import Footer from './layout/Footer'
-
+import Aos from 'aos';
+import React,{useEffect} from "react";
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div className="App">
-        <Navbar/>
+        <Navbar />
         <Landlayout></Landlayout>
         <KeyFeaturesLayout></KeyFeaturesLayout>
         <Roadmap></Roadmap>
