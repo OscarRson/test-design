@@ -17,7 +17,7 @@ import React, { Component }  from 'react';
 function Dashboard() {
 
     return (
-        <section className="dashboard-container flex flex-col items-center justify-center">
+        <section className="dashboard-container flex flex-col items-center justify-center rounded-2xl">
             {/* layout1 */}
             <div className='dashboard-content w-content grid gap-4 p-6 max-mn:grid-cols-2 grid-flow-row mn:grid-flow-col grid-rows-2'>
                 <div class="row-span-2 col-span-2 div-content p-3">

@@ -29,7 +29,7 @@ function App() {
       <Navbar/>
         <Routes>
             <Route index element={<Dashboard />} />
-            <Route path="blocks" element={<AddressDetail />} />
+            <Route path="blocks" element={<TransactionList />} />
             <Route path="trans" element={<Transaction />} />
             <Route path="tokens" element={<Tokens />} />
             <Route path="api" element={<Document />} />

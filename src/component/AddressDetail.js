@@ -15,7 +15,7 @@ import React, { Component }  from 'react';
 function AddressDetail() {
 
     return (
-        <section className="dashboard-container flex flex-col items-center justify-center">
+        <section className="dashboard-container flex flex-col items-center justify-center rounded-2xl">
             {/* layout5 */}
             <div className='dashboard-content w-content p-6 mt-6'>
                 <div class="col-span-1 div-content p-4">

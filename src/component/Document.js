@@ -17,7 +17,7 @@ function Document (){
     };
 
     return (
-        <div class="block w-show h-auto  bg-transparent mx-auto py-6 px-6 rounded-2xl shadow-lg">
+        <div class="block w-show h-auto border-slate-100 border-opacity-50 bg-white bg-opacity-25 mx-auto py-6 px-6 rounded-2xl shadow-lg">
              <div class="flex w-full h-head p-content bg-white bg-opacity-100 mx-auto rounded-2xl">
                 <div class="my-auto text-left w-1/2">
                     API Documentation
