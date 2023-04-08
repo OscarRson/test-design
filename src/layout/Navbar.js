@@ -1,33 +1,33 @@
 import logo from '../assest/img/Logo.png';
+import searchicon from '../assest/img/Search.png';
+import arr_right from '../assest/img/arrow-right.png';
 import '../assest/css/Navbar.css'
- 
+ import React from 'react'
+ import {Outlet, Link} from 'react-router-dom'
 function Navbar() {
   return (
-    <div className="navbar-container  grid grid-cols-10 f-center">
-        <div className='col-span-8 lg:col-span-2'>
-          <div className='flex flex-row justify-items-center items-center'>
-              <img className="logo" alt="Vue logo" src={logo}/>
-              <div className="text-3xl text-white ml-2"> Infinity</div>
-              <div className="text-3xl text-white font-bold"> Bit</div>
+    <header className="navbar-container flex flex-row items-center justify-center">
+      <div className='navbar-content-container'>
+          <div className='inline-block float-left'>
+            <div className='flex flex-row justify-items-center items-center'>
+              <Link to="/"><img className="logo" alt="Vue logo" src={logo}/></Link>
             </div>
+          </div>
+          <div className='inline-block float-right ml-6 mt-2 search-input w-auto md:w-96'>
+             <img src={searchicon}></img><input className='text-sm bg-transparent outline-none text-gray-500 w-full' placeholder='Search by address, token symbol, name, transaction'></input>
+          </div>
+          <div className="inline-block float-right mt-4 max-lg:block">
+              <div className="navbar-menu grid grid-cols-5 gap-8">
+                  <div className="navbar-menu-item flex flex-row items-center text-xs font-medium self-center"><Link to="/blocks">Blocks</Link>  <img className='ml-2' src={arr_right}></img></div>
+                  <div className="navbar-menu-item flex flex-row items-center text-xs font-medium self-center"> <Link to="/trans">Transaction</Link> <img className='ml-2' src={arr_right}></img></div>
+                  <div className="navbar-menu-item flex flex-row items-center text-xs font-medium self-center"> <Link to="/tokens">Tokens</Link> <img className='ml-2' src={arr_right}></img></div>
+                  <div className="navbar-menu-item flex flex-row items-center text-xs font-medium self-center"> <Link to="/api">APIs</Link> <img className='ml-2' src={arr_right}></img></div>
+                  <div className="navbar-menu-item flex flex-row items-center text-xs font-medium self-center"> <Link to="/dbx">DBX</Link> <img className='ml-2' src={arr_right}></img></div>
+              </div>
+          </div>
         </div>
-        <div className="navbar-menu-container col-span-5 mt-6">
-            <div className="navbar-menu self-center grid grid-cols-4">
-                <div className="navbar-menu-item text-xl text-white font-bold"> Home </div>
-                <div className="navbar-menu-item text-xl text-white font-bold"> News </div>
-                <div className="navbar-menu-item text-xl text-white font-bold"> Team </div>
-                <div className="navbar-menu-item text-xl text-white font-bold"> About </div>
-            </div>
-        </div>
-        <div className='col-span-2 lg:col-span-3'>
-            <button className="w-64 down-white-btn text-white text-lg font-bold"><div className='pc-text'>Download Whitepaper</div>
-            <div className="mobile-text space-y-2">
-              <span class="block w-6 h-1 bg-white"></span>
-              <span class="block w-6 h-1 bg-white"></span>
-              <span class="block w-6 h-1 bg-white"></span>
-            </div></button>
-        </div>
-    </div>
+        <Outlet/>
+    </header>
   );
 }
 
